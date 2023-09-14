@@ -1,0 +1,460 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+@font-face {
+    font-family: 'abrilfatface';
+    src: url('fonts/abrilfatface-regular-webfont.woff') format('woff');
+    font-family: 'merriweather-regular';
+    src: url('fonts/merriweather-regular-webfont.woff') format('woff');
+    font-family: 'muli-regular';
+    src: url('fonts/muli-regular-webfont.woff') format('woff');
+    font-family: 'muli-bold';
+    src: url('fonts/muli-bold-webfont.woff') format('woff');
+}
+::selection{
+    background-color: #2EBCB9; /* Color de fondo al seleccionar el texto */
+    color: #ffffff; /* Color del texto seleccionado */
+}
+body{
+    background-color: aqua;
+}
+.barrasuperior{
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
+    z-index: 200;
+    position:fixed;
+    height: 65px;
+    width: 100%;
+    background-color: #ffffff;
+}
+.barra{
+    margin-right: 80px;
+}
+.barrasuperior div{
+    display: inline-block;
+}
+.barrasuperior div img{
+    margin-top: 8px;
+    margin-left: 90px;
+    width: 160px;
+}
+header nav{
+    float: right;
+}
+nav li a:hover{
+    color: #2EBCB9;
+}
+.menu li{
+    font-family: 'muli-bold';
+    text-transform: uppercase;
+    margin-right: 20px;
+    display: inline-block;
+    line-height: 60px;
+}
+.menu li a{
+    font-size: 18px;
+    color: #7F7F7F;
+}
+.checkbtn {
+    font-size: 25px;
+    color: #7F7F7F;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+header{
+    color: #ffffff;
+    margin-top: 0;
+    height: 650px;
+    background-color: black;
+}
+body{
+    margin-top: 0;
+}
+header>h4{
+    font-family: 'abrilfatface';
+    text-align: center;
+    font-size: 25px;
+    line-height: 24px;
+    padding-top: 200px;
+}
+header>h1{
+    width: 100%;
+    font-family: 'abrilfatface';
+    text-align: center;
+    font-size: 226px;
+    margin: 0px;
+    padding: 0px;
+}
+.titulos{
+    font-family: 'muli-bold';
+    font-weight: bolder;
+}
+.introduccion{
+    background-color: #efefef;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+#orgullosos{
+    font-weight: lighter;
+    text-align: center;
+    font-family: 'merriweather';
+    line-height: 46px;
+    font-size: 40px;
+    width: 75%;
+    margin: 200px 0px 200px 0px;
+}
+.Hola{
+    width: 100%;
+    background-color: #ffffff;
+}
+.sobremi{
+    display: flex;
+    justify-content: center;
+    padding: 120px;
+    flex-wrap: wrap;
+}
+.textossobremi{
+    flex: 1;
+    margin-left: 50px;
+    float: right;
+}
+.gusto{
+    font-family: 'muli';
+    font-size: 37px;
+    position: relative;
+}
+.soyun{
+    font-family: 'merriweather';
+    margin-top: 20px;
+    font-size: 23px;
+    position: relative;
+}
+.imagenharoldo{
+    flex: 1;
+    width: 100;
+    position: relative;
+    float: left;
+    filter: grayscale(100%);
+}
+.Servicios{
+    height: auto;
+    padding-top: 80px;
+    color: #ffffff;
+    background-color: black;
+    flex-wrap: wrap;
+}
+.Servicios div h1{
+    text-align: center;
+}
+.Cuidamos h2{
+    font-family: 'merriweather';
+    font-weight: lighter;
+    text-align: center;
+    position: relative;
+    margin: 27px 250px 0px 250px;
+}
+.misservicios{
+    margin-top: 40px;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fotografia{
+    height: 255.5px;
+    text-align: center;
+    width: 315px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.imgfotografia{
+    position: relative;
+}
+.imgfotografia img{
+    position: relative;
+    width: 136px;
+}
+.diseño{
+    text-align: center;
+    width: 315px;
+    max-width: 315px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.imgdiseño{
+    position: relative;
+}
+.diseño img{
+    position: relative;
+    width: 136px;
+}
+.multimedia{
+    text-align: center;
+    width: 315px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.imgmulti{
+    position: relative;
+}
+.multimedia img{
+    position: relative;
+    width: 136px;
+}
+.Portafolio{
+    color: #000000;
+    background-color: #ffffff;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 80px;
+}
+.Portafolio>h1{
+    text-align: center;
+}
+.textoportafolio{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'merriweather';
+    font-size: 26px;
+    line-height: 31px;
+    margin: 27px 100px 35px 100px;
+}
+.Contacto{
+    color: #ffffff;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.Contacto>h1{
+    margin-top: 35px;
+    text-align: center;
+}
+.Contacto p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'merriweather';
+    font-size: 26px;
+    line-height: 31px;
+    margin: 35px 150px 35px 150px;
+}
+.formulario {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'muli-bold';
+    text-transform: uppercase;
+    width: 80%;
+    margin: 30px 0 40px 0;
+}
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+ }
+.form-row input[type="text"],
+.form-row input[type="email"] {
+    font-family: 'merriweather';
+    color: #000000;
+    border: 0;
+    border-radius: 2px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+.form-row label {
+    margin-bottom: 3px;
+    text-align: center;
+}
+.form-row textarea {
+    font-family: 'merriweather';
+    font-size: 14px;
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+} 
+.form-row button {
+    text-align: center;
+    font-family: 'muli-bold';
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    width: 130px;
+  }
+  .form-row button:hover {
+    color: #000000;
+    background-color: #ffffff;
+  }
+  .form-row button:active {
+    color: #000000;
+    background-color: #ffffff;
+  }
+  
+.contenedor{
+    position: relative;
+    text-align: center;
+    height: 163.383px;
+}
+.contenedor>img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.WhatsApp{
+    font-size: 23px;
+    color: #000000;
+    z-index: 300;
+    font-family: 'muli';
+    font-weight: bolder;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.WhatsApp:hover{
+    color: #2EBCB9;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.textofooter{
+    margin-top: 20px;
+}
+.wabiestudiofooter{
+    font-size: 15px;
+    font-family: 'merriweather';
+    font-weight: bolder;
+}
+.minombrefooter{
+    font-family: 'muli';
+    font-size: 16px;
+}
+.direccion{
+    font-size: 14px;
+    font-family:'muli';
+    font-weight: lighter;
+}
+.telefonos{
+    font-size: 14px;
+    font-family:'muli';
+    font-weight: lighter;
+    margin-bottom: 25px;
+}
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+/* @media only screen and (min-width: 700px) {
+    .form-header {
+      padding: 50px;
+    }
+    .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="text"] {
+      width: 250px;
+      height: initial;
+    }
+    .form-row label {
+      text-align: center;
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+} */
+
+@media (max-width: 950px) {
+/* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    body{
+        background-color: #fffb00;
+    }
+    .checkbtn {
+        display: block;
+    }
+    
+    .barra {
+        height: 0vh;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        text-align: center;
+    
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+    
+    .barra .menu {
+        float: none;
+        display: block;
+        width: 150px;
+        margin: 0 auto;
+        opacity: 0;
+      }
+    
+    .barra .menu li a:hover {
+        color: #2EBCB9;
+      }
+      /* ACTIVE */
+    .barra.active {
+        height: 42vh;
+      }
+    
+    .barra.active .menu {
+        opacity: 1;
+      }    
+    .orgullosos{
+        width: 80%;
+    }
+}
+@media (min-width: 1024px) {
+    .Servicios{
+        height: auto;
+    }
+    .fotografia{
+        width: 30%;
+    }
+    .diseño{
+        width: 30%;
+    }
+    .multimedia{
+        width: 30%;
+    }
+}
