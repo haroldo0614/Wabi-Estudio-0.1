@@ -143,16 +143,6 @@ header>h1{
     float: left;
     filter: grayscale(100%);
 }
-.greeting{
-    width: 30%;
-    background-color: #2EBCB9;
-    height: 50px;
-    border: #fffb00;
-    border-radius: 2px;
-    font-family: 'muli-bold';
-    font-weight: lighter;
-
-}
 .Servicios{
     height: auto;
     padding-top: 80px;
